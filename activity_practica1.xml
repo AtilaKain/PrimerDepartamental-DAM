@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/background_color">
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: ocupa todo el ancho y alto de la pantalla -->
+    <!-- gravity="center": centra los elementos hijos en el eje vertical y horizontal -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+    <!-- android:background="@color/background_color": Color de fondo del layout -->
+
+    <!-- Mensaje "Hola Mundo" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola Mundo"
+        android:textSize="24sp"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="20dp" />
+    <!-- text="Hola Mundo": Texto que se muestra en el TextView -->
+    <!-- textSize="24sp": Tamaño de la fuente -->
+    <!-- textColor="@color/text_color": Color del texto -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- layout_marginBottom="20dp": Margen inferior para separación -->
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02" />
+    <!-- id="@+id/btnBackToMenu": Identificador único para el botón -->
+    <!-- text="Volver al Menú": Texto que se muestra en el botón -->
+    <!-- background="@drawable/button_background": Fondo personalizado del botón -->
+    <!-- textColor="@android:color/white": Color del texto en blanco -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- paddingHorizontal="24dp": Espaciado interno horizontal del botón -->
+    <!-- paddingVertical="12dp": Espaciado interno vertical del botón -->
+    <!-- elevation="4dp": Sombra para efecto de elevación -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- letterSpacing="0.02": Espaciado entre letras -->
+
+</LinearLayout>

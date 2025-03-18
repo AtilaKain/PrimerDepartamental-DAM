@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    android:gravity="center">
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: ocupa todo el ancho y alto de la pantalla -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+    <!-- android:background="@color/background_color": Color de fondo del layout -->
+    <!-- gravity="center": centra los elementos hijos en el eje vertical y horizontal -->
+
+    <!-- Campo de texto para el nombre -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+    <!-- id="@+id/etName": Identificador único para el campo de texto -->
+    <!-- hint="Nombre": Texto de sugerencia que se muestra cuando el campo está vacío -->
+    <!-- minHeight="48dp": Altura mínima del campo de texto -->
+    <!-- background="@drawable/edittext_background": Fondo personalizado del campo de texto -->
+    <!-- textColor="@color/text_color": Color del texto ingresado -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- padding="12dp": Espaciado interno del campo de texto -->
+    <!-- layout_marginBottom="16dp": Margen inferior para separación -->
+
+    <!-- Campo de texto para la edad -->
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+    <!-- id="@+id/etAge": Identificador único para el campo de texto -->
+    <!-- hint="Edad": Texto de sugerencia que se muestra cuando el campo está vacío -->
+    <!-- inputType="number": Restringe la entrada a números -->
+    <!-- minHeight="48dp": Altura mínima del campo de texto -->
+    <!-- background="@drawable/edittext_background": Fondo personalizado del campo de texto -->
+    <!-- textColor="@color/text_color": Color del texto ingresado -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- padding="12dp": Espaciado interno del campo de texto -->
+    <!-- layout_marginBottom="16dp": Margen inferior para separación -->
+
+    <!-- Botón para agregar -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02"
+        android:layout_marginBottom="16dp" />
+    <!-- id="@+id/btnAdd": Identificador único para el botón -->
+    <!-- text="Agregar": Texto que se muestra en el botón -->
+    <!-- background="@drawable/button_background": Fondo personalizado del botón -->
+    <!-- textColor="@android:color/white": Color del texto en blanco -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- paddingHorizontal="24dp": Espaciado interno horizontal del botón -->
+    <!-- paddingVertical="12dp": Espaciado interno vertical del botón -->
+    <!-- elevation="4dp": Sombra para efecto de elevación -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- letterSpacing="0.02": Espaciado entre letras -->
+    <!-- layout_marginBottom="16dp": Margen inferior para separación -->
+
+    <!-- Lista de elementos -->
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white"
+        android:padding="8dp" />
+    <!-- id="@+id/lvItems": Identificador único para el ListView -->
+    <!-- match_parent: ocupa todo el ancho disponible -->
+    <!-- layout_height="0dp" y layout_weight="1": Ocupa el espacio restante en altura -->
+    <!-- divider="@color/divider_color": Color del divisor entre elementos -->
+    <!-- dividerHeight="1dp": Altura del divisor -->
+    <!-- background="@android:color/white": Color de fondo del ListView -->
+    <!-- padding="8dp": Espaciado interno del ListView -->
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02"
+        android:layout_marginTop="20dp" />
+    <!-- id="@+id/btnBackToMenu": Identificador único para el botón -->
+    <!-- text="Volver al Menú": Texto que se muestra en el botón -->
+    <!-- background="@drawable/button_background": Fondo personalizado del botón -->
+    <!-- textColor="@android:color/white": Color del texto en blanco -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- paddingHorizontal="24dp": Espaciado interno horizontal del botón -->
+    <!-- paddingVertical="12dp": Espaciado interno vertical del botón -->
+    <!-- elevation="4dp": Sombra para efecto de elevación -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- letterSpacing="0.02": Espaciado entre letras -->
+    <!-- layout_marginTop="20dp": Margen superior para separación -->
+
+</LinearLayout>

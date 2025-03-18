@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:ignore="ExtraText">
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: ocupa todo el ancho y alto de la pantalla -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+    <!-- android:background="@color/background_color": Color de fondo del layout -->
+    <!-- tools:ignore="ExtraText": Ignora advertencias de texto extra en el editor -->
+
+    <!-- Botón para la Práctica 1 -->
+    <Button
+        android:id="@+id/btnPractica1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 1"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02" />
+    <!-- id="@+id/btnPractica1": Identificador único para el botón -->
+    <!-- match_parent: ocupa todo el ancho disponible -->
+    <!-- wrap_content: ajusta la altura al contenido del botón -->
+    <!-- text="Práctica 1": Texto que se muestra en el botón -->
+    <!-- background="@drawable/button_background": Fondo personalizado del botón -->
+    <!-- textColor="@android:color/white": Color del texto en blanco -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- layout_marginBottom="8dp": Margen inferior de 8dp -->
+    <!-- elevation="4dp": Sombra para efecto de elevación -->
+    <!-- padding="12dp": Espaciado interno del botón -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- letterSpacing="0.02": Espaciado entre letras -->
+
+    <!-- Botón para la Práctica 2 -->
+    <Button
+        android:id="@+id/btnPractica2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 2"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02" />
+    <!-- id="@+id/btnPractica2": Identificador único para el botón -->
+    <!-- Similar al botón anterior, pero con texto "Práctica 2" -->
+
+    <!-- Botón para la Práctica 3 -->
+    <Button
+        android:id="@+id/btnPractica3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 3"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02" />
+    <!-- id="@+id/btnPractica3": Identificador único para el botón -->
+    <!-- Similar al botón anterior, pero con texto "Práctica 3" -->
+
+    <!-- Botón para la Práctica 4 -->
+    <Button
+        android:id="@+id/btnPractica4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 4"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02" />
+    <!-- id="@+id/btnPractica4": Identificador único para el botón -->
+    <!-- Similar al botón anterior, pero con texto "Práctica 4" -->
+
+    <!-- Botón para la Práctica 5 -->
+    <Button
+        android:id="@+id/btnPractica5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 5"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02" />
+    <!-- id="@+id/btnPractica5": Identificador único para el botón -->
+    <!-- Similar al botón anterior, pero con texto "Práctica 5" -->
+
+    <!-- Botón para la Práctica 6 -->
+    <Button
+        android:id="@+id/btnPractica6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Práctica 6"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02" />
+    <!-- id="@+id/btnPractica6": Identificador único para el botón -->
+    <!-- Similar al botón anterior, pero con texto "Práctica 6" -->
+
+</LinearLayout>

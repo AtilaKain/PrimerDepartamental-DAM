@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración del documento XML con codificación UTF-8 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    android:gravity="center">
+    <!-- Contenedor principal de la interfaz -->
+    <!-- LinearLayout organiza los elementos en una columna (vertical) -->
+    <!-- match_parent: ocupa todo el ancho y alto de la pantalla -->
+    <!-- padding="16dp": agrega un margen interno de 16dp alrededor del contenido -->
+    <!-- android:background="@color/background_color": Color de fondo del layout -->
+    <!-- gravity="center": centra los elementos hijos en el eje vertical y horizontal -->
+
+    <!-- Temporizador -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo restante: 10 segundos"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="20dp" />
+    <!-- id="@+id/tvTimer": Identificador único para el TextView -->
+    <!-- text="Tiempo restante: 10 segundos": Texto inicial del temporizador -->
+    <!-- textSize="18sp": Tamaño de la fuente -->
+    <!-- textColor="@color/text_color": Color del texto -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- layout_marginBottom="20dp": Margen inferior para separación -->
+
+    <!-- Botón para iniciar el temporizador -->
+    <Button
+        android:id="@+id/btnStartTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Temporizador"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02"
+        android:layout_marginBottom="20dp" />
+    <!-- id="@+id/btnStartTimer": Identificador único para el botón -->
+    <!-- text="Iniciar Temporizador": Texto que se muestra en el botón -->
+    <!-- background="@drawable/button_background": Fondo personalizado del botón -->
+    <!-- textColor="@android:color/white": Color del texto en blanco -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- paddingHorizontal="24dp": Espaciado interno horizontal del botón -->
+    <!-- paddingVertical="12dp": Espaciado interno vertical del botón -->
+    <!-- elevation="4dp": Sombra para efecto de elevación -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- letterSpacing="0.02": Espaciado entre letras -->
+    <!-- layout_marginBottom="20dp": Margen inferior para separación -->
+
+    <!-- Contador -->
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contador: 0"
+        android:textSize="24sp"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="20dp" />
+    <!-- id="@+id/tvCounter": Identificador único para el TextView -->
+    <!-- text="Contador: 0": Texto inicial del contador -->
+    <!-- textSize="24sp": Tamaño de la fuente -->
+    <!-- textColor="@color/text_color": Color del texto -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- layout_marginBottom="20dp": Margen inferior para separación -->
+
+    <!-- Botón para incrementar el contador -->
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haz Clic"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02"
+        android:enabled="false" />
+    <!-- id="@+id/btnIncrement": Identificador único para el botón -->
+    <!-- text="Haz Clic": Texto que se muestra en el botón -->
+    <!-- background="@drawable/button_background": Fondo personalizado del botón -->
+    <!-- textColor="@android:color/white": Color del texto en blanco -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- paddingHorizontal="24dp": Espaciado interno horizontal del botón -->
+    <!-- paddingVertical="12dp": Espaciado interno vertical del botón -->
+    <!-- elevation="4dp": Sombra para efecto de elevación -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- letterSpacing="0.02": Espaciado entre letras -->
+    <!-- enabled="false": Inicialmente deshabilitado hasta que inicie el temporizador -->
+
+    <!-- Título de la lista de mejores scores -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mejores 5 Scores:"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+    <!-- text="Mejores 5 Scores:": Texto que indica la sección de puntuaciones -->
+    <!-- textSize="18sp": Tamaño de la fuente -->
+    <!-- textColor="@color/text_color": Color del texto -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- layout_marginTop="20dp": Margen superior para separación -->
+    <!-- layout_marginBottom="10dp": Margen inferior para separación -->
+
+    <!-- Lista de mejores scores -->
+    <ListView
+        android:id="@+id/lvScores"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white"
+        android:padding="8dp" />
+    <!-- id="@+id/lvScores": Identificador único para el ListView -->
+    <!-- match_parent: ocupa todo el ancho disponible -->
+    <!-- layout_height="0dp" y layout_weight="1": Ocupa el espacio restante en altura -->
+    <!-- divider="@color/divider_color": Color del divisor entre elementos -->
+    <!-- dividerHeight="1dp": Altura del divisor -->
+    <!-- background="@android:color/white": Color de fondo del ListView -->
+    <!-- padding="8dp": Espaciado interno del ListView -->
+
+    <!-- Botón para volver al menú principal -->
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.02"
+        android:layout_marginTop="20dp" />
+    <!-- id="@+id/btnBackToMenu": Identificador único para el botón -->
+    <!-- text="Volver al Menú": Texto que se muestra en el botón -->
+    <!-- background="@drawable/button_background": Fondo personalizado del botón -->
+    <!-- textColor="@android:color/white": Color del texto en blanco -->
+    <!-- textSize="16sp": Tamaño del texto -->
+    <!-- paddingHorizontal="24dp": Espaciado interno horizontal del botón -->
+    <!-- paddingVertical="12dp": Espaciado interno vertical del botón -->
+    <!-- elevation="4dp": Sombra para efecto de elevación -->
+    <!-- fontFamily="sans-serif-medium": Fuente del texto -->
+    <!-- letterSpacing="0.02": Espaciado entre letras -->
+    <!-- layout_marginTop="20dp": Margen superior para separación -->
+
+</LinearLayout>
